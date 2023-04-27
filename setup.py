@@ -1,4 +1,8 @@
 from setuptools import find_packages,setup
+from typing import List
+
+REQUIREMENT_FILE_NAME="requirements.txt"
+HYPHEN_E_DOT = "-e ."
 
 def get_requirements()->List[str]:
     
@@ -12,9 +16,10 @@ def get_requirements()->List[str]:
 
 setup(
     name="sensor",
-    version="0.0.2",
-    author="ineuron",
-    author_email="avnish@ineuron.ai",
+    version="0.0.1",
+    author="Tripra",
+    author_email="prateek302030@gmail.com",
     packages = find_packages(),
     install_requires=get_requirements(),
 )
+
